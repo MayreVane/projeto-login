@@ -26,15 +26,15 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: white;
-    height: 500px;
     width: 260px;
+    height: 500px;    
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.455);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
+    transform: translate(-50%, -50%);
     transition: width 0.8s, height 0.8s;
     transition-timing-function: ease;
 }
@@ -76,7 +76,7 @@ div.campo > label {
 div.campo > i {
     color: white;
     /*background-color: black;*/
-    font-size: 2em;
+    font-size: 1.9em;
     width: 40px;
     padding: 5px;
 }
@@ -84,13 +84,18 @@ div.campo > i {
 div.campo > input {
     background-color: #94cfcd;    
     font-size: 1em;
-    /*width:calc(100%-44px) ;*/
+    width:calc(100%-44px);
     height: 100%;
-    transform: translateY(-12px);
     border: 0px;
     border-radius: 8px;
-    padding: 5.8px;
+    padding: 5px;
+    transform: translateY(-10.6px);
 
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
 }
 
 form > input[type=submit] {
@@ -120,9 +125,9 @@ form > a.botao {
     background-color:#49a09d;
     color: white;    
     border: 1px solid #49a09d;
-    border-radius: 5px;
+    border-radius: 7px;
     text-decoration: none;
-    position: center;    
+        
 }
 
 form > a.botao:hover {
